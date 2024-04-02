@@ -1,0 +1,185 @@
+/*********************************LINK****************************************/
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Caprasimo&family=Dela+Gothic+One&family=Goblin+One&family=Lilita+One&family=Martian+Mono:wght@100;200&family=Michroma&family=Roboto:ital,wght@0,900;1,500&family=Russo+One&family=Source+Code+Pro:ital@1&display=swap');
+
+
+/*********************************BODY***************************************/
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    padding: 0;
+    margin: 0;
+}
+
+/************************************HEADER**********************************/
+
+header {
+    padding: 20px 40px;
+    border-bottom: 1px solid #ffffff;
+    z-index: 20;
+}
+
+h1 {
+    display: none;
+}
+
+/*************************************MAIN************************************/
+
+main {
+    width: 1240px;
+    margin: 0 auto;
+    padding: 50px 0px;
+}
+
+section:first-child + section, section:first-child + section + section {
+    margin-top: 50px;
+}
+
+h2 {
+    padding-bottom: 10px;
+}
+
+/********************************SERIES DU MOMENT****************************/
+
+.serie_du_moment {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 10), rgba(0, 0, 0, 0)), url('img/Stranger-Things.jpg');;
+    background-size: cover;
+    overflow: hidden;
+    padding-bottom: 11%;
+    margin-left: 4%
+}
+
+.serie_du_moment h1{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: flex-start;
+    max-width: 50%;
+    font-family: 'Anton', sans-serif;
+    font-size: 75pt;
+}
+
+.serie_du_moment p{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: flex-start;
+    max-width: 50%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20pt;
+}
+
+/**************************************CARDS************************************/
+
+.card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}  
+
+.card {
+    font-size: 12px;
+    width: 295px; 
+    flex-direction: column;
+    position: relative;
+}
+
+.card :hover {
+    cursor: pointer;
+}
+
+.card img {
+    width: 295px; 
+    height: auto;
+}
+
+.card .infos {
+    background-color: #323232;
+    margin-top: -5px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    width: 100%;
+    position: absolute;
+    visibility: hidden;
+  }
+
+.card h3 {
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+/********************HOVER********************/
+
+.card:hover {
+    transform: scale(1.2);
+    z-index: 10;
+}
+
+.card:hover .infos {
+    visibility: visible;
+}
+
+.card img {
+    border-radius: 4px;
+}
+
+.card:hover img {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+/***DIV INFO***/
+
+.infos {
+    background-color: #323232;
+    margin-top: -5px;
+    border-radius: 0px 0px 4px 4px;
+}
+
+.infos h3, p{
+    padding-left: 10px;
+}
+
+/***RECO***/
+
+.reco {
+    color: #19E45D;
+    margin-bottom: 10px;
+}
+
+/***PLAYER***/
+
+.player {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.play-button {
+    background-color: white;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play-button i {
+    color: #323232;
+    font-size: 15px;
+    display: flex;
+}
+
+/***VIDEO BARRE***/
+
+.video-bar {
+    margin-left: 10px;
+    background-color: #E50914;
+    height: 2px;
+    flex: 1;
+  }

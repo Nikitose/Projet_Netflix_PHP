@@ -1,0 +1,50 @@
+
+footer {
+    margin-top: 50px;
+    padding: 20px 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+  
+footer p {
+    text-align: center;
+    font-size: 12px;
+}
+  
+.logos {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+  
+.logos a {
+    padding: 12px;
+    color: white;
+    transition: all 100ms;
+}
+  
+.logos a:hover {
+    color: #323232;
+}
+  
+.footer-menu {
+    display: flex;
+    justify-content: space-between;
+}
+  
+.footer-menu-deux {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+  
+.footer-menu-deux a {
+    color: #323232;
+    text-decoration: none;
+}
+  
+.footer-menu-deux a:hover {
+    text-decoration: underline;
+}
